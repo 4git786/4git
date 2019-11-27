@@ -1,0 +1,61 @@
+#servicebox{
+  padding: 80px 0;
+  background-color: #f5f6fa;
+}
+
+
+
+demo{ background-color: #E8E9EB; }
+.serviceBox{
+    color: #555;
+    background: #fff;
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+    padding: 40px 15px 20px;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s ease 0s;
+}
+.serviceBox:hover{ box-shadow: 0 0 15px #999; }
+.serviceBox:before{
+    content: "";
+    background: #27ae60;
+    width: 125%;
+    height: 230px;
+    border-radius: 50%;
+    position: absolute;
+    top: -75px;
+    left: -50px;
+    z-index: -1;
+}
+.serviceBox .service-icon{
+    color: #fff;
+    font-size: 75px;
+    line-height: 20px;
+    margin: 0 auto 65px;
+}
+.serviceBox .service-icon i{
+    transform: rotateX(0deg) rotateY(0deg);
+    transition: all 0.3s ease 0s;
+}
+.serviceBox:hover .service-icon i{
+    text-shadow: 0 0 5px #fff;
+    transform: rotateX(360deg) rotateY(360deg);
+}
+.serviceBox .title{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    transition: all 0.3s;
+}
+.serviceBox:hover .title{ color: #27ae60; }
+.serviceBox .description{
+    font-size: 15px;
+    line-height: 25px;
+}
+@media only screen and (max-width:990px){
+    .serviceBox{ margin: 0 0 40px; }
+}
